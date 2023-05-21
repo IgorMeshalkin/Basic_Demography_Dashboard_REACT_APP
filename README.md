@@ -11,11 +11,11 @@ https://basic-dmg.medkhv.ru/
 И страница содержащая форму заполнения данных:<br>
 ![2](https://github.com/IgorMeshalkin/Basic_Demography_Dashboard_REACT_APP/assets/97287038/8635c1b1-a507-4d87-80e7-02b342ba737b)
 
-
-<br>
 По желанию заказдчика фон приложения менятся в зависимости от времени года. <br><br>
 Более подробно с работой приложения можно ознакомиться в этой инструкции:<br>
-[Инструкция к дашборду 'Основные демографические показатели'.pdf](https://github.com/IgorMeshalkin/Basic_Demography_Dashboard_REACT_APP/files/11358138/default.pdf)<br><br>
+[Инструкция к дашборду Основные демографические показатели.pdf](https://github.com/IgorMeshalkin/Basic_Demography_Dashboard_REACT_APP/files/11524070/default.pdf)
+
+<br>
 
 Как это работает?
 -----------------
