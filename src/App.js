@@ -1,25 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import React, {useEffect, useState} from "react";
+import MainPage from "./pages/MainPage";
+import UpdatePage from "./pages/UpdatePage";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    //Активна ли в данный момент главная страница.
+    //localStorage применяется в случае создания нового периода, тогда нужно после обновления открыть форму заполнения данных, а не главную страницу.
+    const [isMainPage, setIsMainPage] = useState(localStorage.getItem('isMainPage') !== null ? false : true)
+    //react-router-dom не применяется в связи с политикой информационной безопасности КГБУЗ "МИАЦ" МЗ ХК
+    //проблемы с загрузкой библиотек, т.к. в приложении всего две страницы было принято решение обойтись таким способом.
+
+    //При каждом обновлении очищается локальное хранилище.
+    useEffect(() => {
+        localStorage.clear();
+    }, [])
+
+    //Состояние которое хранит пароль аунтифицированного юзера
+    const [authPassword, setAuthPassword] = useState('')
+
+    return (
+        <>
+            {
+                isMainPage ?
+                    <MainPage
+                        setIsMainPage={setIsMainPage}
+                        setAuthPassword={setAuthPassword}
+                        authPassword={authPassword}
+                    /> :
+                    <UpdatePage
+                        setIsMainPage={setIsMainPage}
+                        authPassword={authPassword}
+                        setAuthPassword={setAuthPassword}
+                    />
+            }
+        </>
+    );
 }
 
 export default App;

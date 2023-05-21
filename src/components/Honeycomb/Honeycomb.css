@@ -1,0 +1,101 @@
+.hcMain {
+    height: 80px;
+    width: 80px;
+    position: relative;
+}
+
+.hcBorder {
+    /*border: 1px black solid;*/
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg) skew(13deg, 13deg);
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.hcBody {
+    height: 200px;
+    width: 60px;
+    background-color: #098cb8;
+    transform: rotate(45deg);
+    cursor: pointer;
+    pointer-events: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+}
+
+.hcBody:hover {
+    background-color: #077498;
+}
+
+.hcBody.active {
+    background-color: #db2429;
+}
+
+.hcBody.active:hover {
+    background-color: #bb1f23;
+}
+
+.hcMOMane {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    pointer-events: none;
+    z-index: 999998;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+@media (max-height: 880px) {
+    .hcMain {
+        height: 63px;
+        width: 63px;
+    }
+
+    .hcBorder {
+        /*border: 1px black solid;*/
+        height: 63px;
+        width: 63px;
+    }
+
+    .hcBody {
+        height: 200px;
+        width: 47px;
+    }
+
+    .hcMOMane {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+}
+
+@media (max-height: 680px) {
+    .hcMain {
+        height: 55px;
+        width: 55px;
+    }
+
+    .hcBorder {
+        /*border: 1px black solid;*/
+        height: 55px;
+        width: 55px;
+    }
+
+    .hcBody {
+        height: 200px;
+        width: 41px;
+    }
+
+    .hcMOMane {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+}

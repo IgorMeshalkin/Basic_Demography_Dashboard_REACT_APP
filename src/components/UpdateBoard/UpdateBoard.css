@@ -1,0 +1,153 @@
+.upbMain {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.updBoard {
+    height: 100%;
+    width: 60%;
+    background-color: rgba(255, 255, 255, .6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.upbPageContent {
+    width: 100%;
+    height: 100%;
+    animation: slowAppearance .3s;
+    animation-fill-mode: both;
+}
+
+.upbTitle {
+    color: #098cb8;
+    font-weight: bold;
+    font-size: 30px;
+    opacity: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+
+.upbTableContainer {
+    width: 90%;
+    height: 70%;
+    margin: auto;
+    z-index: 999998;
+    overflow-y: scroll;
+    padding-right: 2px;
+}
+
+.upbTableContainer::-webkit-scrollbar {
+    width: 8px;
+}
+
+.upbTableContainer::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(9, 140, 184, .3);
+}
+
+.upbTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.upbTableBody {
+
+}
+
+.upbTableBody tr:nth-child(odd) {
+    background: rgba(9, 140, 184, .3);
+}
+
+.upbTableLeftColumn {
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.upbTableRightColumn {
+    width: 20%;
+}
+
+.updDropDownListsContainer {
+    width: 100%;
+    display: flex;
+    height: 8%;
+}
+
+.updDropDownListContainer {
+    width: 50%;
+    height: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+}
+
+.updAddPeriodButtonContainer {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.upbSubmitButtonContainer {
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upbSubmitButton {
+    height: 40%;
+    width: 20%;
+    background-color: #098cb8;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+
+    animation: fadeIn .3s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.upbSubmitButton:hover {
+    background-color: #077194;
+}
+
+.ubSuccessfulUpdated {
+    font-size: 20px;
+    font-weight: bold;
+    color: #098cb8;
+    animation: fadeIn .3s;
+    animation-fill-mode: both;
+}
+
+@media (max-height: 800px) {
+    .upbTitle {
+        font-size: 22px;
+    }
+}

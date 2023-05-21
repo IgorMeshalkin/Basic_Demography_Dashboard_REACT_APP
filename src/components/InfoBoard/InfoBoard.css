@@ -1,0 +1,180 @@
+.moibContainer {
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moibMain {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #F3F3F3;
+    animation: moibSlowAppearance .3s;
+    animation-fill-mode: both;
+}
+
+@keyframes moibSlowAppearance {
+    from { opacity: 0; }
+    to { opacity: .8; }
+}
+
+.moibMONameContainer {
+    height: 15%;
+    font-weight: bold;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.moibAllInfoContainer {
+    height: 83%;
+    overflow: hidden;
+    padding-right: 20px;
+}
+
+.moibYearBlockOuterContainer {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.tableContainer {
+    height: 83%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*padding-bottom: 10px;*/
+    padding-right: 2px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.tableContainer.big {
+    height: 90%;
+}
+
+.tableContainer::-webkit-scrollbar {
+    width: 8px;
+}
+
+.tableContainer::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #d2d2d2;
+}
+
+.ibTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.ibTableBody {
+
+}
+
+.ibTableBody tr:nth-child(odd) {
+    background: #d2d2d2;
+}
+
+.firstColumn {
+    width: 50%;
+    color: #098cb8;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.firstColumn.big {
+    width: 60%;
+}
+
+.anyColumnHeader {
+    width: 40%;
+    text-align: center;
+    padding-bottom: 5px;
+    margin-right: 8px;
+}
+
+.anyColumnHeader.big {
+    width: 50%;
+}
+
+.anyColumnsContainer {
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.anyColumnValue {
+    width: 40%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.anyColumnValue.big {
+    width: 50%;
+}
+
+.notFound {
+    color: #8b8b8b;
+    font-weight: bolder;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.ibValueToLeft {
+    animation-name: toLeft;
+    animation-duration: .3s;
+    animation-iteration-count: revert;
+}
+
+.ibValueToRight {
+    animation-name: toRight;
+    animation-duration: .3s;
+    animation-iteration-count: revert;
+}
+
+@keyframes toLeft {
+    0% {margin-right: 0; opacity:1;}
+    45% {margin-right: 30px; opacity:0;}
+    55% {margin-right: -30px; opacity:0;}
+    100% {margin-right: 0;opacity:1;}
+}
+
+@keyframes toRight {
+    0% {margin-right: 0; opacity:1;}
+    45% {margin-right: -30px; opacity:0;}
+    55% {margin-right: 30px; opacity:0;}
+    100% {margin-right: 0;opacity:1;}
+}
+
+@media (max-height: 800px) {
+    .moibMain {
+        padding: 5px;
+    }
+    .tableContainer {
+        max-height: 90%;
+        width: 99%;
+    }
+    .moibMONameContainer {
+        font-size: 18px;
+    }
+    .firstColumn {
+        font-size: 16px;
+    }
+    .anyColumnValue {
+        font-size: 16px;
+    }
+    .anyColumnHeader {
+        font-size: 16px;
+    }
+    .moibMain {
+        height: 90%;
+    }
+}

@@ -1,0 +1,4 @@
+C:\Users\User\source\repos\Honeycombs\Honeycombs\obj\Debug\honeycombs.esproj.SuggestedBindingRedirects.cache
+C:\Users\User\source\repos\Honeycombs\Honeycombs\obj\Debug\honeycombs.esproj.CoreCompileInputs.cache
+C:\Users\MeshalkinIE\source\repos\Honeycombs\Honeycombs\obj\Debug\honeycombs.esproj.SuggestedBindingRedirects.cache
+C:\Users\MeshalkinIE\source\repos\Honeycombs\Honeycombs\obj\Debug\honeycombs.esproj.CoreCompileInputs.cache

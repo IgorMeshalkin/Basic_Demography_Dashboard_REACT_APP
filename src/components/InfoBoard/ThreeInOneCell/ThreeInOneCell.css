@@ -1,0 +1,76 @@
+.tioMain {
+    width: 100%;
+    display: flex;
+}
+
+.tioMain.head {
+   background-color: #d2d2d2;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 10px;
+}
+
+.tioFirst {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tioFirst.head {
+    color: #1382CE;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.tioSecond {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tioSecond.head {
+    color: #1382CE;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.tioThird {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tioThird.head {
+    color: #1382CE;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+@media (max-height: 800px) {
+    .tioFirst.head {
+        font-size: 16px;
+    }
+
+    .tioSecond.head {
+        font-size: 16px;
+    }
+
+    .tioThird.head {
+        font-size: 16px;
+    }
+
+    .tioFirst {
+        font-size: 16px;
+    }
+
+    .tioSecond {
+        font-size: 16px;
+    }
+
+    .tioThird {
+        font-size: 16px;
+    }
+}

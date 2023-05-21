@@ -1,0 +1,42 @@
+.notVisible {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.arrow {
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    border: 1px #8b8b8b none;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.arrow.bold {
+    border: 2px #8b8b8b none;
+}
+
+.arrow.right {
+    border: 1px #8b8b8b none;
+    border-top-style: solid;
+    border-right-style: solid;
+}
+
+.arrow.right.bold {
+    border: 2px #8b8b8b none;
+}
+
+.arrow:hover {
+    border: 1px black none;
+    border-bottom-style: solid;
+    border-left-style: solid;
+}
+
+
+.arrow.right:hover {
+    border: 1px black none;
+    border-top-style: solid;
+    border-right-style: solid;
+}

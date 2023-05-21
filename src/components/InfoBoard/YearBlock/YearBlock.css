@@ -1,0 +1,41 @@
+.ybMain {
+    display: flex;
+    height: 30px;
+    width: 100%;
+}
+
+.ybLeft {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ybLeft.big {
+    width: 30%;
+}
+
+.ybCenter {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ybCenter.big {
+    width: 80%;
+}
+
+.ybRight {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ybRight.big {
+    width: 30%;
+}

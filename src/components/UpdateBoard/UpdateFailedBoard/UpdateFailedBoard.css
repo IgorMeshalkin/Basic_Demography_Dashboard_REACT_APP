@@ -1,0 +1,110 @@
+.ufbMain {
+    min-width: 30vw;
+    min-height: 15vh;
+}
+
+.ufbSmallMain {
+    width: 30vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ufbTitle {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 22px;
+    color: #b83509;
+}
+
+.ufbTitle.big {
+    height: 5vh;
+}
+
+.ufbButton {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 22px;
+    color: #098cb8;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.ufbButton.big {
+    height: 5vh;
+}
+
+.ufbButton:hover {
+    color: #077194;
+}
+
+.ufbBoby {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ufbBoby.big {
+    height: 5vh;
+}
+
+.ufbBigMain {
+    width: 60vw;
+    min-height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ufbTableContainer {
+    width: 95%;
+    max-height: 60vh;
+    overflow-y: scroll;
+    padding-right: 2px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.ufbTableContainer::-webkit-scrollbar {
+    width: 4px;
+}
+
+.ufbTableContainer::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background: rgba(184, 53, 9, .3);
+}
+
+.ufbTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ufbTableBody {
+}
+
+.ufbTableBody tr:nth-child(odd) {
+    background: rgba(184, 53, 9, .3);
+}
+
+.ufbLeftSell {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+

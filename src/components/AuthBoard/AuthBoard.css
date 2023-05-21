@@ -1,0 +1,52 @@
+.aubMain {
+    height: 20vh;
+    width: 30vw;
+}
+
+.aubTitle {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #b83509;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.aubInputContainer {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aubSubmitContainer {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #098cb8;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.aubSubmitContainer:hover {
+    color: #077194;
+}
+
+@media (max-height: 800px) {
+    .aubTitle {
+        font-size: 16px;
+    }
+
+    .aubSubmitContainer {
+        font-size: 16px;
+    }
+}

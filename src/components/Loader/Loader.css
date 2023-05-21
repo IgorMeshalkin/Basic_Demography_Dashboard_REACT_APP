@@ -1,0 +1,46 @@
+.loaderBody {
+    display: flex;
+    flex-direction: row;
+}
+
+.circleContainer {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loaderCircle {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #098cb8;
+    opacity: 0;
+    transition: 0.3s;
+    transform: scale(0.3);
+}
+
+.loaderCircle.visible {
+    opacity: 0.9;
+    transform: scale(1);
+}
+
+.loader-enter {
+    opacity: 0;
+    transform: translateY(+15px);
+}
+.loader-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 200ms, transform 200ms;
+}
+.loader-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+.loader-exit-active {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 200ms, transform 200ms;
+}

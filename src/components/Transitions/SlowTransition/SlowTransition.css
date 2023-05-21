@@ -1,0 +1,32 @@
+.alert-enter {
+    opacity: 0;
+    transform: translateY(+15px);
+}
+.alert-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+}
+.alert-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+.alert-exit-active {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.pvValue {
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-height: 800px) {
+    .pvText {
+        font-size: 14px;
+    }
+}

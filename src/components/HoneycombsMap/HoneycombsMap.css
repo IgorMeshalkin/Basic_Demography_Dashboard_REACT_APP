@@ -1,0 +1,155 @@
+.hcmMain {
+    height: 610px;
+    width: 370px;
+    margin: auto;
+    position: relative;
+}
+
+:root {
+    --gorizontal-step: 66;
+    --vertical-step: 38;
+}
+
+.container1 {
+    position: absolute;
+    top: calc(var(--vertical-step) * 5px);
+    left: calc(var(--gorizontal-step) * 4px);
+}
+
+.container4 {
+    position: absolute;
+    top: 0;
+    left: calc(var(--gorizontal-step) * 4px);
+}
+
+.container5 {
+    position: absolute;
+    top: calc(var(--vertical-step) * 1px);;
+    left: calc(var(--gorizontal-step) * 3px);
+}
+
+.container6{
+    position: absolute;
+    top: calc(var(--vertical-step) * 2px);
+    left: calc(var(--gorizontal-step) * 2px);
+}
+
+.container7 {
+    position: absolute;
+    top: calc(var(--vertical-step) * 3px);
+    left: calc(var(--gorizontal-step) * 1px);
+}
+
+.container8 {
+    position: absolute;
+    top: calc(var(--vertical-step) * 4px);
+    left: 0;
+}
+
+.container9 {
+    position: absolute;
+    top: calc(var(--vertical-step) * 6px);
+    left: 0;
+}
+
+.container10 {
+    position: absolute;
+    top: calc(var(--vertical-step) * 8px);
+    left: 0;
+}
+
+.container11 {
+    position: absolute;
+    top: calc(var(--vertical-step) * 10px);
+    left: 0;
+}
+
+.container12 {
+    position: absolute;
+    top: calc(var(--vertical-step) * 10px);
+    left: calc(var(--gorizontal-step) * 2px);
+}
+
+.container13 {
+    position: absolute;
+    top: calc(var(--vertical-step) * 10px);
+    left: calc(var(--gorizontal-step) * 4px);
+}
+
+.container14 {
+    position: absolute;
+    top: calc(var(--vertical-step) * 11px);
+    left: calc(var(--gorizontal-step) * 1px);
+}
+
+.container15 {
+    position: absolute;
+    top: calc(var(--vertical-step) * 11px);
+    left: calc(var(--gorizontal-step) * 3px);
+}
+
+.container16 {
+    position: absolute;
+    top: calc(var(--vertical-step) * 12px);
+    left: 0;
+}
+
+.container17 {
+    position: absolute;
+    top: calc(var(--vertical-step) * 12px);
+    left: calc(var(--gorizontal-step) * 2px);
+}
+
+.container18 {
+    position: absolute;
+    top: calc(var(--vertical-step) * 12px);
+    left: calc(var(--gorizontal-step) * 4px);
+}
+
+.container19 {
+    position: absolute;
+    top: calc(var(--vertical-step) * 13px);
+    left: calc(var(--gorizontal-step) * 1px);
+}
+
+.container20 {
+    position: absolute;
+    top: calc(var(--vertical-step) * 13px);
+    left: calc(var(--gorizontal-step) * 3px);
+}
+
+.container21 {
+    position: absolute;
+    top: calc(var(--vertical-step) * 14px);
+    left: calc(var(--gorizontal-step) * 2px);
+}
+
+.container22 {
+    position: absolute;
+    top: calc(var(--vertical-step) * 14px);
+    left: calc(var(--gorizontal-step) * 4px);
+}
+
+@media (max-height: 880px) {
+    :root {
+        --gorizontal-step: 52;
+        --vertical-step: 30;
+    }
+
+    .hcmMain {
+        height: 480px;
+        width: 300px;
+    }
+}
+
+@media (max-height: 680px) {
+    :root {
+        --gorizontal-step: 46;
+        --vertical-step: 26;
+    }
+
+    .hcmMain {
+        height: 420px;
+        width: 280px;
+    }
+}

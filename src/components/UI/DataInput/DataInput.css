@@ -1,0 +1,21 @@
+.diMain {
+    width: 80%;
+    height: 25px;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #098cb8;
+}
+
+.diInput {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    animation: slowAppearance .3s;
+    animation-fill-mode: both;
+}

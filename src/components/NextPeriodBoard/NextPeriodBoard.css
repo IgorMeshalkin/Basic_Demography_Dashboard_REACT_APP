@@ -1,0 +1,78 @@
+.npbMain {
+    height: 20vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.npbTitle {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #b83509;
+    animation: slowAppearance .3s;
+    animation-fill-mode: both;
+}
+
+.npbBody {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: slowAppearance .3s;
+    animation-fill-mode: both;
+}
+
+.npbBodySpan {
+    text-align: center;
+    animation: slowAppearance .3s;
+    animation-fill-mode: both;
+}
+
+.npbBodySpanBold {
+    text-align: center;
+    font-weight: bold;
+    animation: slowAppearance .3s;
+    animation-fill-mode: both;
+}
+
+.npbButtonContainer {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #098cb8;
+    transition: .3s;
+    cursor: pointer;
+    animation: slowAppearance .3s;
+    animation-fill-mode: both;
+}
+
+.npbButtonContainer:hover {
+    color: #077194;
+}
+
+@media (max-height: 800px) {
+    .npbMain {
+        height: 25vh;
+    }
+
+    .npbTitle {
+        font-size: 18px;
+    }
+
+    .npbButtonContainer {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,76 @@
+.bhcMain {
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+
+.bhcBorder {
+    /*border: 1px black solid;*/
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg) skew(13deg, 13deg);
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.bhcBody {
+    height: 200px;
+    width: 70px;
+    background-color: #098cb8;
+    transform: rotate(45deg);
+    cursor: pointer;
+    pointer-events: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+}
+
+.bhcBody:hover {
+    background-color: #077498;
+}
+
+.bhcBody.active {
+    background-color: #db2429;
+}
+
+.bhcBody.active:hover {
+    background-color: #bb1f23;
+}
+
+.bhcMOMane {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    pointer-events: none;
+    z-index: 999998;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-height: 880px) {
+    .bhcMain {
+        height: 80px;
+        width: 80px;
+    }
+
+    .bhcBorder {
+        height: 80px;
+        width: 80px;
+    }
+
+    .bhcBody {
+        height: 200px;
+        width: 58px;
+    }
+
+    .bhcMOMane {
+        font-size: 18px;
+        white-space: nowrap;
+    }
+}

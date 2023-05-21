@@ -1,0 +1,90 @@
+.abMain {
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid #8b8b8b;
+    transition: .3s;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.abMain:hover {
+    background-color: rgba(230, 230, 230, 1);
+}
+
+.abMain:hover .adPlusFirst {
+    border: 1px none black;
+    border-left-style: solid;
+}
+
+.abMain:hover .adPlusSecond {
+    border: 1px none black;
+    border-top-style: solid;
+}
+
+.adPlusFirst {
+    height: 20px;
+    width: 20px;
+    border: 1px none #8b8b8b;
+    border-left-style: solid;
+    position: absolute;
+    top: 8px;
+    left: 17px;
+    transition: .3s;
+    animation: slowAppearance .3s;
+    animation-fill-mode: both;
+}
+
+.adPlusSecond {
+    height: 20px;
+    width: 20px;
+    border: 1px none #8b8b8b;
+    border-top-style: solid;
+    position: absolute;
+    top: 17px;
+    left: 8px;
+    transition: .3s;
+    animation: slowAppearance .3s;
+    animation-fill-mode: both;
+}
+
+.abLoaderContainer {
+    animation: slowAppearance .3s;
+    animation-fill-mode: both;
+}
+
+.abLoader {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px #8b8b8b solid;
+    position: relative;
+    animation: rotation 2s infinite linear;
+}
+
+.adLoaderEmptyPoint {
+    height: 6px;
+    width: 10px;
+    background-color: white;
+    position: absolute;
+    bottom: -3px;
+    left: 8px;
+    transition: .3s;
+}
+
+.abMain:hover .adLoaderEmptyPoint {
+    background-color: rgba(230, 230, 230, 1);
+}
+
+@keyframes rotation {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
