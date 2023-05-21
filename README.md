@@ -15,11 +15,9 @@ https://basic-dmg.medkhv.ru/
 Более подробно с работой приложения можно ознакомиться в этой инструкции:<br>
 [Инструкция к дашборду Основные демографические показатели.pdf](https://github.com/IgorMeshalkin/Basic_Demography_Dashboard_REACT_APP/files/11524070/default.pdf)
 
-<br>
-
-Как это работает?
+Технологии
 -----------------
-В работе над приложением, помимо самого ReactJS я использовал такие библиотеки как React-Transition-Group и Axios.
+Кроме самого ReactJS я использовал такие библиотеки как React-Transition-Group и Axios.
 
 Контакты
 -----------
